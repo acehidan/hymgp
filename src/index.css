@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-green: #1E8A3C;
+  --color-green-dark: #155F2A;
+  --color-green-light: #E8F5EC;
+  --color-green-mid: #2EAD52;
+  --color-yellow: #E8B800;
+  --color-yellow-light: #FFF8DC;
+  --color-yellow-dark: #B38E00;
+  --color-red: #CC2B2B;
+  --color-red-light: #FFF0F0;
+  --color-red-dark: #9E2020;
+  --color-dark: #0F1410;
+  --color-dark-2: #161D18;
+  --color-dark-3: #1E2820;
+  --color-slate: #3A4A3E;
+  --color-slate-2: #506056;
+  --color-light: #F4F7F5;
+  --color-light-2: #E8EDE9;
+  --color-muted: #7A8C7E;
+  --color-muted-2: #9BAA9E;
+
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #FFFFFF;
+  color: var(--color-dark);
+  font-weight: 500;
+  line-height: 1.8;
+  font-size: 17px;
+  overflow-x: hidden;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-green);
+  border-radius: 3px;
+}
+
+/* Hide scrollbar for tabs */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
